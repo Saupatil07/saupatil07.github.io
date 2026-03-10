@@ -135,82 +135,131 @@ span.highlight {
 } */
 
 
-body{
-padding:20px 40px;
-border-bottom:1px solid #eee;
+:root {
+    --primary-color: #005bb7;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --card-bg: #f9f9f9;
 }
 
-.navbar a{
-margin-left:20px;
-text-decoration:none;
-color:#333;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-color);
 }
 
-.hero{
-max-width:1000px;
-margin:auto;
-display:flex;
-align-items:center;
-padding:80px 20px;
-gap:40px;
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.hero img{
-width:180px;
-border-radius:50%;
+a:hover {
+    text-decoration: underline;
 }
 
-.links a{
-margin-right:15px;
-color:#2563eb;
+header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
 }
 
-section{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.card{
-display:flex;
-gap:20px;
-padding:20px;
-border-radius:10px;
-margin:20px 0;
-transition:all 0.3s ease;
-border:1px solid #eee;
+.bio-text h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
 }
 
-.card:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+.links {
+    margin-top: 15px;
 }
 
-.card img{
-width:160px;
-height:100px;
-object-fit:cover;
-border-radius:6px;
+.links a {
+    margin-right: 12px;
+    font-size: 0.95rem;
 }
 
-.venue{
-color:#777;
-font-size:14px;
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
-footer{
-text-align:center;
-padding:40px;
-color:#777;
+.card {
+    display: flex;
+    gap: 25px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: transform 0.2s;
+    border: 1px solid #eee;
 }
 
-.fade-in{
-opacity:0;
-transform:translateY(20px);
-transition:all 0.8s ease;
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.fade-in.visible{
-opacity:1;
-transform:none;
+.card img {
+    width: 250px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.venue {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
+}
+
+.authors {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
