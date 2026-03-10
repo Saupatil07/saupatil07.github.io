@@ -1,5 +1,5 @@
 /* latin-ext */
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
@@ -7,46 +7,46 @@
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+} */
 /* latin-ext */
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+} */
 /* latin */
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+} */
 /* latin-ext */
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+} */
 /* latin */
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin-ext */
+
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -54,7 +54,7 @@
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -132,4 +132,85 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+} */
+
+
+body{
+padding:20px 40px;
+border-bottom:1px solid #eee;
+}
+
+.navbar a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+max-width:1000px;
+margin:auto;
+display:flex;
+align-items:center;
+padding:80px 20px;
+gap:40px;
+}
+
+.hero img{
+width:180px;
+border-radius:50%;
+}
+
+.links a{
+margin-right:15px;
+color:#2563eb;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+display:flex;
+gap:20px;
+padding:20px;
+border-radius:10px;
+margin:20px 0;
+transition:all 0.3s ease;
+border:1px solid #eee;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card img{
+width:160px;
+height:100px;
+object-fit:cover;
+border-radius:6px;
+}
+
+.venue{
+color:#777;
+font-size:14px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+.fade-in{
+opacity:0;
+transform:translateY(20px);
+transition:all 0.8s ease;
+}
+
+.fade-in.visible{
+opacity:1;
+transform:none;
 }
