@@ -1,18 +1,5 @@
-const observer = new IntersectionObserver(entries => {
+// Currently your animations are handled by CSS. 
+// You can add interaction logic here in the future, 
+// for example, a dark mode toggle or dynamic filter buttons.
 
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("visible");
-
-}
-
-});
-
-});
-
-
-const hiddenElements = document.querySelectorAll(".fade-in");
-
-hiddenElements.forEach(el => observer.observe(el));
+console.log("Website loaded successfully.");
