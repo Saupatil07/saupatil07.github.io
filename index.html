@@ -235,84 +235,241 @@
 </html> --> -->
 
 <!DOCTYPE html>
-</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Patil | Research Assistant</title>
+    <meta name="author" content="Saurabh Patil">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #005bb7;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --card-bg: #f9f9f9;
+        }
 
-<p class="venue">arXiv 2024</p>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+        }
 
-<a href="https://arxiv.org/abs/2405.07395">Paper</a>
-</div>
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
 
-</div>
+        a:hover {
+            text-decoration: underline;
+        }
 
+        /* Header & Bio */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
 
-<div class="card">
-<img src="images/L-PDE-solver_page-0001.jpg">
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
 
-<div>
-<h3>Latent Neural PDE Solver</h3>
+        .bio-text h1 {
+            margin-top: 0;
+            font-size: 2.2rem;
+        }
 
-<p>Zijie Li*, <strong>Saurabh Patil*</strong></p>
+        .links {
+            margin-top: 15px;
+        }
 
-<p class="venue">arXiv 2024</p>
+        .links a {
+            margin-right: 12px;
+            font-size: 0.95rem;
+        }
 
-<a href="https://arxiv.org/abs/2402.17853">Paper</a>
+        /* Section Titles */
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
 
-</div>
-</div>
+        /* Card Layout */
+        .card {
+            display: flex;
+            gap: 25px;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+            border: 1px solid #eee;
+        }
 
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
 
-<div class="card">
-<img src="images/architecture_1_page-0001.jpg">
+        .card img {
+            width: 250px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
 
-<div>
-<h3>Hyena Neural Operator for PDEs</h3>
+        .card-content h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
 
-<p><strong>Saurabh Patil</strong>, Zijie Li</p>
+        .venue {
+            font-style: italic;
+            color: #666;
+            margin: 5px 0;
+        }
 
-<p class="venue">APL Machine Learning 2024</p>
+        .authors {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
 
-<a href="https://github.com/Saupatil07/Hyena-Neural-Operator">Code</a>
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 20px;
+            }
+            .card {
+                flex-direction: column;
+            }
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
 
-</div>
-</div>
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
 
-</section>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
 
+    <header class="fade-in">
+        <div class="bio-text">
+            <h1>Saurabh Patil</h1>
+            <p>
+                Welcome! I worked as a research assistant at the <a href="https://sites.google.com/view/barati">Mechanical and AI lab</a> at Carnegie Mellon University (CMU). My work focuses on the intersection of numerical simulation and deep learning. I hold a Master's degree in Mechanical Engineering from CMU.
+            </p>
+            <p>
+                On this page, you can find my publications and academic projects. I am interested in applying machine learning to solve complex physical problems.
+            </p>
+            <div class="links">
+                <a href="mailto:patilsaurabh11@gmail.com">Email</a> /
+                <a href="data/Saurabh_Patil_resume.pdf">CV</a> /
+                <a href="https://scholar.google.com/citations?user=cfGynhcAAAAJ&hl=en">Scholar</a> /
+                <a href="https://github.com/Saupatil07">GitHub</a> /
+                <a href="https://www.linkedin.com/in/saurabhpatil31/">LinkedIn</a> /
+                <a href="https://huggingface.co/Ellight">HuggingFace</a>
+            </div>
+        </div>
+        <img src="images/saurabh_profile.jpg" alt="Saurabh Patil" class="profile-pic">
+    </header>
 
-<section id="projects" class="fade-in">
+    <section id="publications" class="fade-in">
+        <h2>Publications</h2>
+        <p><small>* denotes equal contribution</small></p>
 
-<h2>Projects</h2>
+        <div class="card">
+            <img src="images/Main_schematic_page-0001.jpg" alt="CaFA">
+            <div class="card-content">
+                <h3>CaFA: Global Weather Forecasting with Factorized Attention on Sphere</h3>
+                <p class="authors">Zijie Li, Anthony Zhou, <strong>Saurabh Patil</strong>, Amir Barati Farimani</p>
+                <p class="venue">arXiv, 2024</p>
+                <p>An end-to-end ML weather prediction model based on factorized attention on a sphere.</p>
+                <a href="https://arxiv.org/abs/2405.07395">Paper</a>
+            </div>
+        </div>
 
-<div class="card">
-<img src="images/adversarial_point_cloud.png">
+        <div class="card">
+            <img src="images/L-PDE-solver_page-0001.jpg" alt="L-PDE">
+            <div class="card-content">
+                <h3>Latent Neural PDE Solver: a reduced-order modelling framework</h3>
+                <p class="authors">Zijie Li*, <strong>Saurabh Patil*</strong>, Francis Ogoke, et al.</p>
+                <p class="venue">arXiv, 2024</p>
+                <p>Proposed learning system dynamics in latent space with coarser discretizations.</p>
+                <a href="https://arxiv.org/abs/2402.17853">Paper</a>
+            </div>
+        </div>
 
-<div>
-<h3>Adversarial Attacks Against Point Clouds</h3>
+        <div class="card">
+            <img src="images/architecture_1_page-0001.jpg" alt="Hyena">
+            <div class="card-content">
+                <h3>Hyena Neural Operator for Partial Differential Equations</h3>
+                <p class="authors"><strong>Saurabh Patil</strong>, Zijie Li, Amir Barati Farimani</p>
+                <p class="venue">APL Machine Learning, 2024</p>
+                <p>A state-space based neural operator with sub-quadratic complexity and global receptive field.</p>
+                <a href="https://github.com/Saupatil07/Hyena-Neural-Operator">Code</a>
+            </div>
+        </div>
+    </section>
 
-<p>PointNet and DGCNN robustness evaluation.</p>
+    <section id="projects" class="fade-in">
+        <h2>Academic Projects</h2>
 
-<a href="https://github.com/Saupatil07/Adversarial-Attacks-against-Point-clouds">Code</a>
+        <div class="card">
+            <img src="images/adversarial_point_cloud.png" alt="Point Clouds">
+            <div class="card-content">
+                <h3>Adversarial Attacks Against Point Clouds</h3>
+                <p class="venue">Trustworthy AI Autonomy, 2022</p>
+                <p>Testing PointNet and DGCNN robustness against FGSM and Saliency map attacks.</p>
+                <a href="https://github.com/Saupatil07/Adversarial-Attacks-against-Point-clouds">Code</a>
+            </div>
+        </div>
 
-</div>
-</div>
+        <div class="card">
+            <img src="images/bioinspired.png" alt="Tail Robot">
+            <div class="card-content">
+                <h3>Tail Robot-aeroDIMA</h3>
+                <p class="venue">Bioinspired Robot Design, 2022</p>
+                <p>Comparing maneuverability of wheeled robots with aerodynamic vs. inertial tails.</p>
+                <a href="https://youtu.be/UXPaBU0tEnw">Video</a> | <a href="data/24775-1.pdf">Poster</a>
+            </div>
+        </div>
+    </section>
 
-</section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: patilsaurabh11@gmail.com</p>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Saurabh Patil</p>
-
-</footer>
+    <footer>
+        <p style="text-align: center; margin-top: 80px; font-size: 0.8rem; color: #888;">
+            &copy; 2026 Saurabh Patil. Template adapted from Jon Barron.
+        </p>
+    </footer>
 
 </body>
 </html>
