@@ -339,10 +339,19 @@ h2 {
     transform: scale(1.01);
 }
 
-.card img {
+/* .card img {
     width: 220px;
     filter: brightness(0.8) contrast(1.2);
     border: 1px solid var(--border-color);
+} */
+
+.card img {
+    width: 220px;
+    height: 140px; /* Force a consistent height */
+    object-fit: cover; /* Crops the edges to fit the box perfectly */
+    border: 1px solid var(--border-color);
+    filter: brightness(0.8) contrast(1.2);
+    border-radius: 4px;
 }
 
 /* AI Terminal Typing Effect */
