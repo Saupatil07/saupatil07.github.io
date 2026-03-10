@@ -346,7 +346,7 @@ h2 {
 } */
 
 .card img {
-    width: 220px;
+    width: 280px;
     height: 140px; /* Force a consistent height */
     object-fit: cover; /* Crops the edges to fit the box perfectly */
     border: 1px solid var(--border-color);
